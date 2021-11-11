@@ -1,0 +1,389 @@
+:root {
+  --primary: #c8d8e4;
+  --secondary: #2b6777;
+  --important: #c51616;
+  --primary-text: #ffffff;
+  --secondary-text: #2b6777;
+  --primary-hover: #1c3b46;
+  --secondary-hover: #97a3ad;
+  --important-hover: #910f0f;
+}
+
+* {
+  background-color: var(--primary);
+  
+}
+
+body {
+  margin: 0;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+.content {
+  width: 70%;
+  margin:auto;
+}
+
+.navbar-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.accview-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 100px;
+  font-size: 20px;
+}
+
+.accview-grid-item {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.button-flex-container {
+  margin-top: 30px;
+  justify-content: space-between;
+  display: flex;
+}
+
+.button * {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 5px 10px;
+}
+
+.navbar * {
+  color: var(--primary-text);
+  
+  font-family: 'Epilogue', sans-serif;
+  font-size: 15px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 5px 10px;
+}
+
+.left-navbar {
+  justify-self: left;
+}
+
+.right-navbar {
+  justify-self: right;
+}
+
+.button-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.button-secondary:hover {
+  background-color: var(--secondary-hover);
+}
+
+.button-important:hover {
+  background-color: var(--important-hover);
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  border-radius: 5px;
+  font-family: 'Epilogue', sans-serif;
+  font-weight: bold;
+  padding: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.button-primary {
+  background-color: var(--secondary);
+  color: var(--primary-text);
+}
+
+.button-secondary {
+  background-color: var(--primary);
+  margin-top: 5px;
+  height: 40px;
+  color: var(--secondary-text);
+}
+
+.button-important {
+  background-color: var(--important);
+  color: var(--primary-text);
+}
+
+.signIN{
+  font-family: 'Montserrat', sans-serif;
+  width: 450px;
+  min-height: 500px;
+  height: auto;
+  border-radius: 20px;
+  margin: 2% auto;
+  padding: 2%;
+  background : var(--secondary);
+}
+
+
+.form-box {
+  background-color: var(--secondary);
+  text-align: center;
+}
+
+.login {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.login-naslov {
+  color: var(--primary-text);
+  border-radius: 20px;
+  text-align: center;
+  margin: 2% auto 10% auto;
+  background-color: var(--secondary);
+}
+.login-naslov h1 { 
+  background-color:var(--secondary);
+}
+
+.login-naslov p{
+  background-color: var(--secondary);
+}
+
+.input-item {
+  background: var(--primary-text);
+  color: #333;
+  padding: 14.5px 0px 15px 9px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.icon {
+  height: 25px;
+  width: auto;
+  margin-right: 3px;
+  padding: 5px;
+}
+
+form {
+  display: inline-block;  
+  min-height: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin: 2% auto;
+  padding: 2%;  
+  background-color: var(--primary);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-box{
+  display: block;
+  text-align: center;
+}
+
+.form-control{
+  width: 300px;
+  height: 25px;
+
+  margin-top: 2%;
+  padding: 15px;
+  
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #5E6472;
+
+  background-color:var(--primary);
+
+  outline: none;
+  border: none;
+
+  border-radius: 0px 5px 5px 0px;
+  transition: 0.2s linear;
+  
+}
+
+input:focus {
+  transform: translateX(-3px);
+  border-radius: 8px;
+}
+
+input[id="email-input"] {
+  width: 300px; 
+}
+
+.email-form{
+  background-color: var(--primary);
+  
+}
+
+.btn-login {
+  display: inline-block;
+  color: var(--primary-text);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+  width: 280px;
+  height: 60px;
+  padding: 0 20px;
+  background: var(--secondary);
+  border-radius: 5px;  
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s linear;  
+  margin: 7% auto;
+  letter-spacing: 0.05em;
+}
+
+.ostaloLogin{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: var(--primary-text);
+  background-color: var(--secondary);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.frgt-pass{
+  color: var(--secondary-text);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  background-color: var(--secondary);
+}
+
+
+
+.sign-up-option, .pass-reset-option{
+  background-color: var(--secondary);
+}
+
+.submits {
+  text-align: center;
+  width: 48%;
+  display: inline-block;
+  margin-left: 2%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primary);
+  border-radius: 5px;
+}
+
+button:visited
+{
+ color: var(--primary-text);
+ text-decoration: none;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  display: inline-block;
+}
+
+
+.home-container {
+    font-family: 'Montserrat', sans-serif;
+    width: 62.5%;
+    height: 77%;
+    border-radius: 20px;
+    margin: 2% auto;
+    padding: 2%;
+    background : var(--secondary);
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    left: 10%;
+    bottom: 10%;
+}
+
+.slide-image {
+  height: 600px;
+  width: auto;
+  border-radius: 5px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 5%; 
+}
+
+.slide-image-container {
+  position: relative; 
+  width: 100%; /* for IE 6 */
+  height: 100%;
+  border-radius: 5px;
+  background-color: var(--secondary);
+}
+
+h2 { 
+  position: absolute; 
+  top: 3%; 
+  left: 8%; 
+  width: 25%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  font-size: 300%;
+  color: white;
+  margin: 2% auto;
+  padding: 2%;
+}
+
+.slide-description {
+  position: absolute; 
+  top: 45%; 
+  left: 13%; 
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  font-size: 200%;
+  color: white;
+  padding:0 5px;
+}
+
+.slider{
+  height: 100% !important;
+  border-radius: 5px;
+  background-color: var(--secondary);
+  
+  position: absolute;
+    top: 0%;
+    right: 0;
+
+}
+
+.track {
+  border-radius: 5px;
+  background-color: var(--secondary);
+  height: 100%;
+}
+
+.slide {
+  border-radius: 5px;
+  background-color: var(--secondary);
+  background-size: cover !important;
+  height: 100%;
+}
+
+svg[viewBox="0 0 20 30"] {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+polygon {
+  fill: var(--primary);
+}
